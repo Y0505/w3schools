@@ -1,0 +1,395 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section,summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.col-15px{
+    width:15px;
+}
+.col-1{
+    width:8.33%;
+}
+.col-2{
+    width:16.66%;
+}
+.col-3{
+    width:24.99%;
+}
+.col-4{
+    width:33.32%;
+}
+.col-5{
+    width:41.65%;
+}
+.col-6{
+    width:50%;
+}
+.col-7{
+    width:58.31%;
+}
+.col-8{
+    width:66.64%;
+}
+.col-9{
+    width:74.97%;
+}
+.col-10{
+    width:83.33%;
+}
+.col-11{
+    width:91.63%;
+}
+.col-12{
+    width:100%;
+}
+.col-a1{
+    width:100px;
+}
+.col-a2{
+    width:150px;
+}
+.col-z2{
+    width:50px;
+}
+.col-z1{
+    width:150px;
+}
+.row > .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-6,
+.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-z1,.col-z2{
+    display: block;
+    float: right;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+/*
+* Margin Section
+*/
+.mt-5{
+    margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-35{
+    margin-top: 35px;
+}
+.mt-130{
+    margin-top: 130px;
+}
+.mb-5{
+    margin-bottom: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mr-60{
+    margin-right: 60px;
+}
+.mr-65{
+    margin-right: 65px;
+}
+.mr-85{
+    margin-right: 85px;
+}
+.ml-30{
+    margin-right: 30px;
+}
+/*
+* Padding Section
+*/
+.pt-5{
+    padding-top: 5px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pt-15{
+    padding-top: 15px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pb-5{
+    padding-bottom: 5px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pb-15{
+    padding-bottom: 15px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.pl-5{
+    padding-left: 5px;
+}
+.px-5 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.px-10 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.bg-color{
+    background-color: aquamarine;
+}
+.bg-top-heder{
+    background-color: rgb(29, 42, 53);
+}
+.bg-nav{
+    background-color: rgb(40, 42, 53);
+}
+.bg-aside{
+    background-color: rgb(21, 32, 43);
+}
+.go-left{
+    float: left !important; 
+}
+/*
+* Color
+*/
+
+.withe-color{
+    color: white;
+}
+
+/*
+* Size
+*/
+.text_right{
+    text-align: right;
+}
+.fs-20{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+/*
+* Fonts
+*/
+@font-face {
+    font-family: "Vazirmatn";
+    src:
+    local("Vazirmatn"),/*  از سیستم کاربر چک کن */
+    url("/assest/font/vazirmatn/Vazirmatn-Light.woff2") , format("woff2");
+    font-weight: Light;
+}
+a , h1 , button{
+    font-family: 'Vazirmatn';
+}
+  
+
+.button > input[type="text"]{
+    border : 2px solid #dddddd;
+    border-radius:5px;
+    width: 150px;
+}
+.button2 > input[type="text"]{
+    margin-top: 10px;
+    border : 7px solid #23a02d;
+    background-color: #23a02d;
+    border-radius:0px 15px 15px 0px;
+    width: 40px;
+}
+.button3 > input[type="text"]{
+    margin-top: 10px;
+    border : 7px solid #ffffff;
+    border-radius:15px 0px 0px 15px;
+    width: 197px;
+}
+.height{
+    height: max-content;
+}
+.height-all{
+    height: 100vh;
+}
+.height-350{
+    height: 350px;
+}
+input {
+    border: 0px; 
+}
+.img{
+    margin: 65px;
+    height: 180px;
+}
+
+.nav-link {
+    display: inline-block;
+    color: #fff0f0;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.nav-aside {
+    display: block;
+    color: #fff0f0;
+    font-size: 12px;
+    text-decoration: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.menu-item{
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #fff0f0;
+}
+.blodtext{
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    color: #fff0f0;
+    text-decoration: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 5px;
+    text-align: right;
+}
+.logo{
+    text-align: center;
+}
+.nav-link:hover{
+    background-color: rgb(29, 26, 37);
+}
+.menu-item:hover{
+    background-color: rgb(4, 170, 109);
+}
+.nav-aside:hover{
+    background-color: rgb(4, 170, 109);
+}
+.nav {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.aside{
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.nav-link:nth-child(2){
+    background-color: rgb(4, 170, 109);
+}
+.nav-aside:nth-child(2){ /* چرا اگر 1 باشد کار نمیکنه؟ */
+    background-color: rgb(4, 170, 109);
+}
+
+.button {
+    font-weight: bold;
+    border: 0px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 6px 15px;
+    background-color: rgb(4, 170, 109);
+    color: white;
+}
+.button:hover{
+    background-color: rgb(3, 139, 89);
+}
+.position-next{
+    position: relative;
+    top: 30px;
+    right: 30px;
+
+}
+.position-back{
+    position: relative;
+    top: 30px;
+    right: 650px;
+}
+
+.right_border{
+    border-right: rgb(53, 62, 71) solid 1px;
+    box-sizing: border-box;
+
+}
+
+.line{
+    border-top: rgb(53, 62, 71) solid 1px;
+    position: relative;
+    top: 160px;
+    left: 17px;
+    width: 790px;
+}
+/* body{
+    background-clip: border-box !important;
+} */
+
+/* چرا وقتی ستاره میزاریم، وزیر متن روی همه اعمال نمیشه*/
+/* چطور اسکرول را به سمت چپ بیاوریم */
