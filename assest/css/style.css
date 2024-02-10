@@ -65,6 +65,10 @@ a {
 .col-3{
     width:24.99%;
 }
+.col-aside{
+    width:17.2%;
+    overflow: hidden;
+}
 .col-4{
     width:33.32%;
 }
@@ -105,7 +109,7 @@ a {
     width:150px;
 }
 .row > .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-6,
-.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-z1,.col-z2{
+.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-z1,.col-z2,.col-aside{
     display: block;
     float: right;
 }
@@ -234,7 +238,6 @@ a {
 .fs-20{
     font-size: 20px;
     font-weight: bold;
-
 }
 
 /*
@@ -247,7 +250,7 @@ a {
     url("/assest/font/vazirmatn/Vazirmatn-Light.woff2") , format("woff2");
     font-weight: Light;
 }
-a , h1 , button{
+a , h1 , button , p, code{
     font-family: 'Vazirmatn';
 }
   
@@ -257,6 +260,7 @@ a , h1 , button{
     border-radius:5px;
     width: 150px;
 }
+
 .button2 > input[type="text"]{
     margin-top: 10px;
     border : 7px solid #23a02d;
@@ -270,6 +274,43 @@ a , h1 , button{
     border-radius:15px 0px 0px 15px;
     width: 197px;
 }
+
+.signup{
+    border: 0px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius: 17px;
+    background-color: rgb(4, 170, 109);
+    color: white;
+    position: fixed;
+    right: 50px;
+    top: 10px;
+    z-index: 6;
+}
+
+.login {
+    border: 0px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 10px;
+    padding-left: 25px;
+    font-size: 10px;
+    border-radius: 17px;
+    background-color: rgb(217, 238, 225);
+    color: rgb(0, 0, 0);
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 5;
+}
+.signup:hover{
+    background-color: rgb(3, 139, 89);
+}
+.login:hover{
+    background-color: rgb(3, 139, 89);
+    color: white;
+}
+
 .height{
     height: max-content;
 }
@@ -278,6 +319,9 @@ a , h1 , button{
 }
 .height-350{
     height: 350px;
+}
+.height-aside{
+    height: 1163.5px;
 }
 input {
     border: 0px; 
@@ -313,6 +357,14 @@ input {
     text-align: center;
     color: #fff0f0;
 }
+.menu-item-none{
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #fff0f0;
+}
 .blodtext{
     font-size: 15px;
     font-weight: bold;
@@ -324,6 +376,32 @@ input {
     padding-right: 5px;
     text-align: right;
 }
+
+.adv {
+    margin:10px 35px ;
+}
+.adv2 {
+    margin:10px 45px ;
+}
+.position-adv{
+    position: sticky;
+    top: 10px;
+}
+.adv-contaner{
+    margin:15px 35px ;
+    position: relative;
+}
+.adv-contaner a img{
+    margin-bottom: 15px;
+}
+.adv-contaner a:nth-child(3){
+    margin: 15px;
+}
+.adv-contaner a:first-childs img{
+    position: sticky;
+    top: 20px;
+}
+
 .logo{
     text-align: center;
 }
@@ -333,6 +411,7 @@ input {
 .menu-item:hover{
     background-color: rgb(4, 170, 109);
 }
+
 .nav-aside:hover{
     background-color: rgb(4, 170, 109);
 }
@@ -359,7 +438,21 @@ input {
     background-color: rgb(4, 170, 109);
     color: white;
 }
+.button2 {
+    font-weight: bold;
+    font-size: 10px;
+    border: 0px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 4px 10px;
+    background-color: rgb(4, 170, 109);
+    color: white;
+    margin-top: 33px;
+    margin-right: 15px;
+}
 .button:hover{
+    background-color: rgb(3, 139, 89);
+}
+.button2:hover{
     background-color: rgb(3, 139, 89);
 }
 .position-next{
@@ -374,6 +467,46 @@ input {
     right: 650px;
 }
 
+.fix-r{
+    position: fixed;
+    right: 0px;
+    z-index: 1;
+
+}
+.fix-l{
+    position: fixed;
+    left: 0px;
+    z-index: 1;
+
+}
+.fix-nav{
+    position: fixed;
+    top: 45px;
+    z-index: 1;
+
+}
+.fix-aside{
+    position: fixed;
+    top: 85px;
+    right: 0px;
+    z-index: 1;
+
+}
+.fix-aside-r{
+    position: relative;
+    top: 85px;
+    right: 200px;
+    z-index: 0;
+
+}
+.fix-section{
+    position: relative;
+    top: 85px;
+    right: 207px;
+    z-index: 0;
+
+}
+
 .right_border{
     border-right: rgb(53, 62, 71) solid 1px;
     box-sizing: border-box;
@@ -383,10 +516,110 @@ input {
 .line{
     border-top: rgb(53, 62, 71) solid 1px;
     position: relative;
-    top: 160px;
-    left: 17px;
+    top: 20px;
+    right: 15px;
     width: 790px;
 }
+
+.line p{
+    padding-top: 10px;
+    font-size: 12px;
+    margin-right: 14px;
+}
+.line p:first-child{
+    padding-top: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.line2{
+    border-top: rgb(53, 62, 71) solid 1px;
+    position: relative;
+    top: 20px;
+    right: 15px;
+    width: 790px;
+    height: 150px;
+}
+
+.line2 p{
+    padding-top: 17px;
+    font-size: 12px;
+    margin-right: 14px;
+}
+.line2 p:first-child{
+    padding-top: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.line2 p:last-child{
+    padding-bottom: 15px;
+}
+body {
+    direction: rtl;
+}
+.last-height{
+    height: 20px;
+    width: 100px;
+}
+.green-box{
+    width: 100%;
+    height: 130px;
+    background-color: rgb(25, 61, 61);
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.green-box  p{
+
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.Rectangle{
+    width: 780px;
+    height: 280px;
+    background-color: rgb(56,68,77);
+    margin: auto ;
+    margin-top: 40px ;
+    border-radius: 5px;
+}
+.Rectangle  p{
+    font-size: 15px;
+    position: relative;
+    top: 15px;
+    right: 9px;
+}
+
+.littel-Rectangle{
+    width: 750px;
+    height: 200px;
+    background-color: rgb(21,32,43);
+    position: relative;
+    top: 25px;
+    right: 15px;
+
+}
+code{
+    font-size: 10px;
+    direction: rtl;
+    padding: 1px;
+}
+.rf{
+    color: rgb(255, 153, 153);
+}
+.pf{
+    color: rgb(197, 165, 197);
+}
+.gf{
+    color: rgb(136, 201, 153);
+}
+
+.ptype {
+    padding-top: 12px;
+    font-size: 10px;
+    margin-right: 24px;
+    
+}
+
 /* body{
     background-clip: border-box !important;
 } */
